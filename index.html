@@ -15,7 +15,7 @@
     <!--VAPP VUE-->
     <div id="app">
         <ul>
-            <li  >{{ mails}}</li>
+            <li  v-for="singleMail in mails"> {{ singleMail }}</li>
         </ul>
         
     </div>
