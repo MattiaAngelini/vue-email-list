@@ -15,7 +15,9 @@
     <!--VAPP VUE-->
     <div id="app">
         <ul>
-            <li  v-for="singleMail in mails"> {{ singleMail }}</li>
+            <!--(if) quando lunghezza array è uguale 10, stampa
+            10 volte (for), singlemail -->
+            <li v-if="mails.length === 10" v-for="singleMail in mails"> {{ singleMail }}</li>
         </ul>
         
     </div>
